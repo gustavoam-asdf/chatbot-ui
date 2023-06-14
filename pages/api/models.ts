@@ -1,5 +1,4 @@
 import { OPENAI_API_HOST, OPENAI_API_TYPE, OPENAI_API_VERSION, OPENAI_ORGANIZATION } from '@/utils/app/const';
-
 import { OpenAIModel, OpenAIModelID, OpenAIModels } from '@/types/openai';
 
 export const config = {
@@ -39,8 +38,7 @@ const handler = async (req: Request): Promise<Response> => {
       });
     } else if (response.status !== 200) {
       console.error(
-        `OpenAI API returned an error ${
-          response.status
+        `OpenAI API returned an error ${response.status
         }: ${await response.text()}`,
       );
       throw new Error('OpenAI API returned an error');
