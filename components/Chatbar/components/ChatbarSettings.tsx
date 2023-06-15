@@ -1,18 +1,15 @@
 import { IconFileExport, IconSettings } from '@tabler/icons-react';
 import { useContext, useState } from 'react';
 
-import { useTranslation } from 'next-i18next';
-
-import HomeContext from '@/pages/api/home/home.context';
-
-import { SettingDialog } from '@/components/Settings/SettingDialog';
-
-import { Import } from '../../Settings/Import';
-import { Key } from '../../Settings/Key';
-import { SidebarButton } from '../../Sidebar/SidebarButton';
 import ChatbarContext from '../Chatbar.context';
 import { ClearConversations } from './ClearConversations';
+import HomeContext from '@/pages/api/home/home.context';
+import { Import } from '../../Settings/Import';
+import { Key } from '../../Settings/Key';
 import { PluginKeys } from './PluginKeys';
+import { SettingDialog } from '@/components/Settings/SettingDialog';
+import { SidebarButton } from '../../Sidebar/SidebarButton';
+import { useTranslation } from 'next-i18next';
 
 export const ChatbarSettings = () => {
   const { t } = useTranslation('sidebar');
@@ -41,14 +38,6 @@ export const ChatbarSettings = () => {
       {conversations.length > 0 ? (
         <ClearConversations onClearConversations={handleClearConversations} />
       ) : null}
-
-      <Import onImport={handleImportConversations} />
-
-      <SidebarButton
-        text={t('Export data')}
-        icon={<IconFileExport size={18} />}
-        onClick={() => handleExportData()}
-      />
 
       <SidebarButton
         text={t('Settings')}
