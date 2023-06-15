@@ -12,13 +12,13 @@ const Promptbar = () => {
             <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/">Comprensión verbal</Link>
           </div>
           <div className="relative flex items-center">
-            <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/razonamiento-perceptivo">Razonamiento perceptivo</Link>
-          </div>
-          <div className="relative flex items-center">
             <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/memoria-trabajo">Memoria de trabajo</Link>
           </div>
           <div className="relative flex items-center">
             <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/velocidad-procesamiento">V. procesamiento</Link>
+          </div>
+          <div className="relative flex items-center">
+            <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/razonamiento-perceptivo">Razonamiento perceptivo</Link>
           </div>
         </div>
       </div>
