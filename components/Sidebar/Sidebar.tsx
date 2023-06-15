@@ -47,7 +47,7 @@ const Sidebar = <T,>({
   };
 
   const highlightDrop = (e: any) => {
-    e.target.style.background = '#343541';
+    e.target.style.background = '#292a2d';
   };
 
   const removeHighlight = (e: any) => {
