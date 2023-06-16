@@ -1,7 +1,7 @@
 import { ConversationComponent } from './Conversation';
 import Folder from '@/components/Folder';
 import { FolderInterface } from '@/types/folder';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { useContext } from 'react';
 
 interface Props {

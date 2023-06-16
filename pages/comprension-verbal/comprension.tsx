@@ -1,6 +1,6 @@
 import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '@/utils/app/const';
 import { FolderInterface, FolderType } from '@/types/folder';
-import { HomeInitialState, initialState } from './comprension.state';
+import { HomeInitialState, initialState } from '../../context/page.state';
 import { OpenAIModelID, OpenAIModels, fallbackModelID } from '@/types/openai';
 import {
   cleanConversationHistory,
@@ -18,7 +18,7 @@ import { Chatbar } from '@/components/Chatbar/Chatbar';
 import { Conversation } from '@/types/chat';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
-import HomeContext from './comprension.context';
+import HomeContext from '../../context/page.context';
 import { KeyValuePair } from '@/types/data';
 import { Navbar } from '@/components/Mobile/Navbar';
 import { Prompt } from '@/types/prompt';

@@ -16,7 +16,7 @@ import {
 
 import ChatbarContext from '@/components/Chatbar/Chatbar.context';
 import { Conversation } from '@/types/chat';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import SidebarActionButton from '@/components/Buttons/SidebarActionButton';
 
 interface Props {

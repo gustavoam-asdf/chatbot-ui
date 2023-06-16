@@ -1,7 +1,7 @@
 import { FC, useContext, useEffect, useReducer, useRef } from 'react';
 import { getSettings, saveSettings } from '@/utils/app/settings';
 
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { Settings } from '@/types/settings';
 import { useCreateReducer } from '@/hooks/useCreateReducer';
 import { useTranslation } from 'next-i18next';

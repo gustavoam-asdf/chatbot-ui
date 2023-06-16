@@ -15,7 +15,7 @@ import {
 } from 'react';
 
 import { FolderInterface } from '@/types/folder';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import SidebarActionButton from '@/components/Buttons/SidebarActionButton';
 
 interface Props {

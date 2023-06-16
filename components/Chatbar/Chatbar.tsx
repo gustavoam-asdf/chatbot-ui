@@ -10,7 +10,7 @@ import ChatbarContext from './Chatbar.context';
 import { ChatbarSettings } from './components/ChatbarSettings';
 import { Conversation } from '@/types/chat';
 import { Conversations } from './components/Conversations';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { OpenAIModels } from '@/types/openai';
 import { PluginKey } from '@/types/plugin';
 import Sidebar from '../Sidebar';

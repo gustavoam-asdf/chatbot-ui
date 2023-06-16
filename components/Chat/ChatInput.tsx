@@ -16,7 +16,7 @@ import {
   useState,
 } from 'react';
 
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { Message } from '@/types/chat';
 import { Plugin } from '@/types/plugin';
 import { PluginSelect } from './PluginSelect';

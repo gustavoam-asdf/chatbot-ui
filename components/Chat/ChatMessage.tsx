@@ -9,7 +9,7 @@ import {
 } from '@tabler/icons-react';
 
 import { CodeBlock } from '../Markdown/CodeBlock';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { MemoizedReactMarkdown } from '../Markdown/MemoizedReactMarkdown';
 import { Message } from '@/types/chat';
 import rehypeMathjax from 'rehype-mathjax';

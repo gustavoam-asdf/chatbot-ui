@@ -3,7 +3,7 @@ import { useContext, useState } from 'react';
 
 import ChatbarContext from '../Chatbar.context';
 import { ClearConversations } from './ClearConversations';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { Import } from '../../Settings/Import';
 import { Key } from '../../Settings/Key';
 import { PluginKeys } from './PluginKeys';

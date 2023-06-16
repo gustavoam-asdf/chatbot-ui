@@ -1,4 +1,4 @@
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { IconExternalLink } from '@tabler/icons-react';
 import { OpenAIModel } from '@/types/openai';
 import { useContext } from 'react';

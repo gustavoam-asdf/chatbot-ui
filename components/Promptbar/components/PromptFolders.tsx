@@ -1,6 +1,6 @@
 import Folder from '@/components/Folder';
 import { FolderInterface } from '@/types/folder';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { PromptComponent } from '@/components/Promptbar/components/Prompt';
 import PromptbarContext from '../PromptBar.context';
 import { useContext } from 'react';

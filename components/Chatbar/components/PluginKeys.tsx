@@ -2,7 +2,7 @@ import { KeyboardEvent, useContext, useEffect, useRef, useState } from 'react';
 import { PluginID, PluginKey } from '@/types/plugin';
 
 import ChatbarContext from '../Chatbar.context';
-import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import HomeContext from '@/context/page.context';
 import { IconKey } from '@tabler/icons-react';
 import { SidebarButton } from '@/components/Sidebar/SidebarButton';
 import { useTranslation } from 'react-i18next';
