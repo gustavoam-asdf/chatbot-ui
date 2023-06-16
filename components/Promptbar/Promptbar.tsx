@@ -9,7 +9,7 @@ const Promptbar = () => {
         <h2 className='border-b-2 mb-2 font-bold py-1'>WAIS IV</h2>
         <div className="flex w-full flex-col gap-3">
           <div className="relative flex items-center">
-            <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/">Comprensión verbal</Link>
+            <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/comprension-verbal">Comprensión verbal</Link>
           </div>
           <div className="relative flex items-center">
             <Link className='w-full flex-1 rounded-md border border-neutral-600 bg-[#202123] px-4 py-3 pr-10 text-[14px] leading-3 text-white hover:bg-neutral-800' href="/memoria-trabajo">Memoria de trabajo</Link>
