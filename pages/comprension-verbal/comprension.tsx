@@ -373,7 +373,9 @@ const Home = ({
           </div>
 
           <div className="flex h-full w-full pt-[48px] sm:pt-0">
-            <Promptbar />
+            <div className="max-sm:hidden">
+              <Promptbar />
+            </div>
 
             <div className="flex flex-1">
               <Chat stopConversationRef={stopConversationRef} />

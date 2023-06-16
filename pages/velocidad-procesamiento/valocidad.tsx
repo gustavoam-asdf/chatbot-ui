@@ -19,6 +19,7 @@ import { Conversation } from '@/types/chat';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import HomeContext from '../../context/page.context';
+import { IconRobot } from '@tabler/icons-react';
 import { KeyValuePair } from '@/types/data';
 import { Navbar } from '@/components/Mobile/Navbar';
 import { Prompt } from '@/types/prompt';
@@ -33,7 +34,6 @@ import useErrorService from '@/services/errorService';
 import { useQuery } from 'react-query';
 import { useTranslation } from 'next-i18next';
 import { v4 as uuidv4 } from 'uuid';
-import { IconRobot } from '@tabler/icons-react';
 
 interface Props {
   serverSideApiKeyIsSet: boolean;
@@ -374,7 +374,9 @@ const Home = ({
           </div>
 
           <div className="flex h-full w-full pt-[48px] sm:pt-0">
-            <Promptbar />
+            <div className="max-sm:hidden">
+              <Promptbar />
+            </div>
 
             <div className="flex flex-1">
               <div className="relative flex-1 overflow-hidden bg-white dark:bg-[#292a2d]">
