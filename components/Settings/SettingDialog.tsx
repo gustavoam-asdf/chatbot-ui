@@ -1,14 +1,10 @@
 import { FC, useContext, useEffect, useReducer, useRef } from 'react';
-
-import { useTranslation } from 'next-i18next';
-
-import { useCreateReducer } from '@/hooks/useCreateReducer';
-
 import { getSettings, saveSettings } from '@/utils/app/settings';
 
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
 import { Settings } from '@/types/settings';
-
-import HomeContext from '@/pages/api/home/home.context';
+import { useCreateReducer } from '@/hooks/useCreateReducer';
+import { useTranslation } from 'next-i18next';
 
 interface Props {
   open: boolean;

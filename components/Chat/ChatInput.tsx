@@ -16,17 +16,14 @@ import {
   useState,
 } from 'react';
 
-import { useTranslation } from 'next-i18next';
-
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
 import { Message } from '@/types/chat';
 import { Plugin } from '@/types/plugin';
-import { Prompt } from '@/types/prompt';
-
-import HomeContext from '@/pages/api/home/home.context';
-
 import { PluginSelect } from './PluginSelect';
+import { Prompt } from '@/types/prompt';
 import { PromptList } from './PromptList';
 import { VariableModal } from './VariableModal';
+import { useTranslation } from 'next-i18next';
 
 interface Props {
   onSend: (message: Message, plugin: Plugin | null) => void;

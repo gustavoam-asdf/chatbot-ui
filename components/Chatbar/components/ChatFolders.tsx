@@ -1,12 +1,8 @@
-import { useContext } from 'react';
-
-import { FolderInterface } from '@/types/folder';
-
-import HomeContext from '@/pages/api/home/home.context';
-
-import Folder from '@/components/Folder';
-
 import { ConversationComponent } from './Conversation';
+import Folder from '@/components/Folder';
+import { FolderInterface } from '@/types/folder';
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import { useContext } from 'react';
 
 interface Props {
   searchTerm: string;

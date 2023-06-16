@@ -1,29 +1,22 @@
+import { ChatbarInitialState, initialState } from './Chatbar.state';
+import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '@/utils/app/const';
+import { LatestExportFormat, SupportedExportFormats } from '@/types/export';
+import { exportData, importData } from '@/utils/app/importExport';
+import { saveConversation, saveConversations } from '@/utils/app/conversation';
 import { useCallback, useContext, useEffect } from 'react';
 
-import { useTranslation } from 'next-i18next';
-
-import { useCreateReducer } from '@/hooks/useCreateReducer';
-
-import { DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE } from '@/utils/app/const';
-import { saveConversation, saveConversations } from '@/utils/app/conversation';
-import { saveFolders } from '@/utils/app/folders';
-import { exportData, importData } from '@/utils/app/importExport';
-
+import { ChatFolders } from './components/ChatFolders';
+import ChatbarContext from './Chatbar.context';
+import { ChatbarSettings } from './components/ChatbarSettings';
 import { Conversation } from '@/types/chat';
-import { LatestExportFormat, SupportedExportFormats } from '@/types/export';
+import { Conversations } from './components/Conversations';
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
 import { OpenAIModels } from '@/types/openai';
 import { PluginKey } from '@/types/plugin';
-
-import HomeContext from '@/pages/api/home/home.context';
-
-import { ChatFolders } from './components/ChatFolders';
-import { ChatbarSettings } from './components/ChatbarSettings';
-import { Conversations } from './components/Conversations';
-
 import Sidebar from '../Sidebar';
-import ChatbarContext from './Chatbar.context';
-import { ChatbarInitialState, initialState } from './Chatbar.state';
-
+import { saveFolders } from '@/utils/app/folders';
+import { useCreateReducer } from '@/hooks/useCreateReducer';
+import { useTranslation } from 'next-i18next';
 import { v4 as uuidv4 } from 'uuid';
 
 export const Chatbar = () => {

@@ -18,7 +18,7 @@ import {
 import { ChatInput } from './ChatInput';
 import { ChatLoader } from './ChatLoader';
 import { ErrorMessageDiv } from './ErrorMessageDiv';
-import HomeContext from '@/pages/api/home/home.context';
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
 import { MemoizedChatMessage } from './MemoizedChatMessage';
 import { ModelSelect } from './ModelSelect';
 import { Plugin } from '@/types/plugin';

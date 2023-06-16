@@ -1,13 +1,9 @@
-import { useContext } from 'react';
-
-import { FolderInterface } from '@/types/folder';
-
-import HomeContext from '@/pages/api/home/home.context';
-
 import Folder from '@/components/Folder';
+import { FolderInterface } from '@/types/folder';
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
 import { PromptComponent } from '@/components/Promptbar/components/Prompt';
-
 import PromptbarContext from '../PromptBar.context';
+import { useContext } from 'react';
 
 export const PromptFolders = () => {
   const {

@@ -1,11 +1,4 @@
 import {
-  IconCheck,
-  IconMessage,
-  IconPencil,
-  IconTrash,
-  IconX,
-} from '@tabler/icons-react';
-import {
   DragEvent,
   KeyboardEvent,
   MouseEventHandler,
@@ -13,13 +6,18 @@ import {
   useEffect,
   useState,
 } from 'react';
+import {
+  IconCheck,
+  IconMessage,
+  IconPencil,
+  IconTrash,
+  IconX,
+} from '@tabler/icons-react';
 
-import { Conversation } from '@/types/chat';
-
-import HomeContext from '@/pages/api/home/home.context';
-
-import SidebarActionButton from '@/components/Buttons/SidebarActionButton';
 import ChatbarContext from '@/components/Chatbar/Chatbar.context';
+import { Conversation } from '@/types/chat';
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import SidebarActionButton from '@/components/Buttons/SidebarActionButton';
 
 interface Props {
   conversation: Conversation;

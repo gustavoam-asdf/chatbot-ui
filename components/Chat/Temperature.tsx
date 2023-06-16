@@ -1,10 +1,8 @@
 import { FC, useContext, useState } from 'react';
 
-import { useTranslation } from 'next-i18next';
-
 import { DEFAULT_TEMPERATURE } from '@/utils/app/const';
-
-import HomeContext from '@/pages/api/home/home.context';
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
+import { useTranslation } from 'next-i18next';
 
 interface Props {
   label: string;

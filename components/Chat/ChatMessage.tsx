@@ -1,3 +1,4 @@
+import { FC, memo, useContext, useEffect, useRef, useState } from 'react';
 import {
   IconCheck,
   IconCopy,
@@ -6,22 +7,16 @@ import {
   IconTrash,
   IconUser,
 } from '@tabler/icons-react';
-import { FC, memo, useContext, useEffect, useRef, useState } from 'react';
-
-import { useTranslation } from 'next-i18next';
-
-import { updateConversation } from '@/utils/app/conversation';
-
-import { Message } from '@/types/chat';
-
-import HomeContext from '@/pages/api/home/home.context';
 
 import { CodeBlock } from '../Markdown/CodeBlock';
+import HomeContext from '@/pages/comprension-verbal/comprension.context';
 import { MemoizedReactMarkdown } from '../Markdown/MemoizedReactMarkdown';
-
+import { Message } from '@/types/chat';
 import rehypeMathjax from 'rehype-mathjax';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
+import { updateConversation } from '@/utils/app/conversation';
+import { useTranslation } from 'next-i18next';
 
 export interface Props {
   message: Message;
